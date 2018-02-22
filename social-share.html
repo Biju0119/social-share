@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social share</title>
+	<style type="text/css">
+		a {background-color:#eee;border:1px solid #ddd;border-radius:2px;display:inline-block;color:#444;font-size:14px;line-height:1;padding:4px 12px;text-decoration:none;}
+		a:hover{color:#ff6600;}
+	</style>
+</head>
+<body>
+FACEBOOK
+<a  rel="nofollow" onClick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=<?php the_title() ?>&amp;p[url]=<?php the_permalink() ?>&amp;p[images][0]=','sharer','toolbar=0,status=0,width=580,height=325');" href="javascript: void(0)" title="Share on Facebook">Facebook</a><br /><br />
+
+TWITTER
+<a href="https://twitter.com/intent/tweet?text=<?php the_title() ?>&url=<?php the_permalink() ?>" title="Share on Twitter" target="_blank" rel="nofollow" >Twitter</a><br /><br />
+
+GOOGLE PLUS
+<a href="https://plus.google.com/share?url=<?php the_permalink() ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="_blank" title="Share on google+" rel="nofollow">Google Plus</a><br /><br />
+
+LINKEDIN
+<a rel="nofollow" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title() ?>" title="Share on Linkedin" target="blank">LinkedIn</a><br /><br />
+
+PINTEREST
+<a target="_blank" title="Share on Pinterest" href="https://pinterest.com/pin/create/button/? u=<?php echo $current_url; ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=600');return false;">Pinterest</a>
+</body>
+</html>
